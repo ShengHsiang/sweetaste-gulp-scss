@@ -1,0 +1,21 @@
+// customize
+@import "functions";
+@import 'customize/variables';
+@import "mixins";
+
+
+// bootstrap original scss
+@import "root";
+@import "reboot";
+@import "grid";
+
+@import "navbar";
+@import "pagination";
+@import "card";
+@import "buttons";
+@import "input-group";
+// @import "forms";
+@import "utilities";
+
+// customize
+@import "customize/customize";

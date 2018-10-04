@@ -26,7 +26,7 @@
 }
 
 // banner css
-.banner {
+.index-banner {
     background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -208,6 +208,35 @@
         max-height: 315px;
     }
 
+    .card::before {
+        content: '本日精選';
+        position: absolute;
+        top: 0;
+        left: 20px;
+        padding: 15px 5px;
+        background-color: $primary;
+        writing-mode: vertical-rl;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: 5px
+    }
+
+    .like {
+        position: absolute;
+        font-size: 20px;
+        right: 20px;
+        top: 20px;
+        color: #3F5D45;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .like.click {
+        font-weight: bold;
+        animation-name: jump;
+        animation-duration: 0.5s;
+    }
+
     .card-body{
         padding: 0;
     }
@@ -243,6 +272,7 @@
     }
 }
 
+// email section
 .subscribe {
     background-color: $primary;
 
@@ -283,6 +313,7 @@
     }
 }
 
+// footer css
 footer {
     background-color: #EAF0ED;
     padding: 50px 0;

@@ -8,7 +8,8 @@ const autoprefixer = require('autoprefixer');
 gulp.task('vendorJs', function () {
     return gulp.src([
         './node_modules/jquery/dist/jquery.slim.min.js',
-        './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js'
+        './node_modules/bootstrap/dist/js/bootstrap.bundle.min.js',
+        './source/javascripts/all.js'
     ])
         .pipe($.concat('vendor.js'))
         .pipe(gulp.dest('./public/javascripts'))
@@ -60,6 +61,7 @@ gulp.task('browserSync', function () {
 // 監看變動
 gulp.task('watch', function () {
     gulp.watch(['./source/stylesheets/**/*.sass', './source/stylesheets/**/*.scss'], ['sass']);  // 監看 scss 有更動，就呼叫 sass。
+    gulp.watch(['./source/javascripts/*.js'], ['vendorJs']); //監看javascript變動
     gulp.watch(['./source/**/**', '!/source/stylesheets/**/**'], ['copy']);  //監看 source 資料夾，有更新就複製到 public資料夾
 });
 

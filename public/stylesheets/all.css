@@ -5019,6 +5019,11 @@ a.text-dark:hover, a.text-dark:focus {
   font-size: 16px;
   font-weight: 700; }
 
+.navbar .navbar-nav a:hover {
+  text-decoration: none;
+  border-bottom: 2px #3F5D45 solid;
+  padding-bottom: 15px; }
+
 .navbar li:last-child {
   padding-right: 0px; }
 
@@ -5125,7 +5130,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .middle-slice2 {
   background-color: #EAF0ED;
-  margin-top: 100px; }
+  margin-top: 105px; }
   .middle-slice2 .col-img {
     height: 420px; }
   .middle-slice2 .middle-img {
@@ -5167,14 +5172,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .middle-slice3 .col {
   text-align: center;
-  padding: 95px; }
+  padding: 90px; }
 
 .middle-slice3 img {
   display: inline-block;
   width: 90px; }
 
 .items img {
-  max-height: 315px; }
+  height: 315px; }
 
 .items .card::before {
   content: '本日精選';
@@ -5363,5 +5368,9 @@ footer {
 
 .shop-content .list-group-item:hover {
   background-color: #ffe180; }
+
+.shop-content .page-link {
+  padding: 20px 25px;
+  font-size: 18px; }
 
 /*# sourceMappingURL=all.css.map */

@@ -1,8 +1,21 @@
-
+.container {
+    max-width: 1024px;
+}
 // narbar's logo
 .navbar {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
 
-    .logo {
+    button {
+        display: none;
+        font-size: 20px;
+        color: $primary;
+    }
+    .navbar-logo {
         display: block;
         background-image: url(../images/logo-all-dark.svg);
         background-repeat: no-repeat;
@@ -11,25 +24,86 @@
         white-space: nowrap;
         text-indent: 101%;
         max-width: 200px;
-        height: 40px;
+        height: 60px;
+        width: 200px;
+    }
+    .navbar-cart {
+        margin-left: 40px;
+        font-size: 24px
     }
 
-    .navbar-nav li {
-        padding: 0 30px;
+    @media (max-width: 767px) {
+        button {
+            display: block;
+            padding: 0;
+            margin-left: 20px;
+        }        
+    
+        .navbar-logo {
+            background-image: url(../images/logotype-lg-dark.svg);
+            height: 30px;
+            width: 115px;
+        }
+    
+        .navbar-cart {
+            margin: 0;
+            font-size: 20px;
+            margin-right: 20px
+        }
+    }
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0;
+
+    li {
+        padding: 15px 30px;
         font-size: 16px;
         font-weight: 700;
     }
 
-    .navbar-nav a:hover {
-        text-decoration: none;
+    li:hover {
         border-bottom: 2px $primary solid;
-        padding-bottom: 15px;
+        cursor: pointer;
     }
 
-    li:last-child {
-        padding-right: 0px;
+    a:hover {
+        text-decoration: none;
+    }
+
+    @media (max-width: 767px) {
+        /* 先隱藏menu */
+       max-height: 0px;
+       overflow: hidden;
+       transition: max-height 2s;        
+       /*絕對定位疊在網頁上*/
+       position: absolute;
+       z-index: 100;
+       top: 80px;
+       left: 0;
+       right: 0;
+       margin-right: 0px;
+
+       flex-direction: column;
+       align-items: center;
+       background-color: #fff;
+       
     }
 }
+
+// jquery 用 menu
+.navbar-show .navbar-nav {
+    max-height: 500px;
+}
+
+
 
 // banner css
 .index-banner {
@@ -38,6 +112,10 @@
     background-size: cover;
     background-position: center center;
     height: 496px;
+
+    @media (max-width: 375px) {
+        height: 277px;
+    }
 }
 
 .banner-content {
@@ -46,7 +124,7 @@
     .content-box a{
         // box standard props
         position: relative;
-        max-height: 300px;
+        min-height: 180px;
         height: 20vw;
         width: 101%;
         background-color: rgba(63, 93, 69, .8);
@@ -97,7 +175,42 @@
     }
 }
 
+@media (max-width: 767px) {
+    .banner.container{
+        padding: 0;
+    }
+
+    .banner-content {
+        padding: 0 15px;
+    }
+}
+
 // middle content css
+
+.middle-slice1-slogan {
+    display: none;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    margin-top: -13%;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 60px;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
+
+    @media (max-width: 375px) {
+        margin-top: -20%;
+    }
+}
 
 .middle-slice1 {
     background-color: #EAF0ED;
@@ -127,7 +240,8 @@
 
         background-image: url(../images/slogan1.svg);
         background-repeat: no-repeat;
-        width: 90px;
+        width: 20%;
+        margin-left: 10px;
         position: relative;
         top: -5%;      
     }
@@ -135,10 +249,11 @@
     .middle-content {
         writing-mode: vertical-rl;
         height: 280px;
-        width: calc(100% - 11vw);
-        margin: 70px 0;
-        margin-right: 30px;
-        padding: 0 50px;
+        width: calc(80%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
 
         color: #8DA291;
         font-size: 16px;
@@ -146,6 +261,48 @@
         
     }
     
+    @media (max-width: 767px) {
+        .middle-title {
+            display: none;
+        }
+        .middle-content {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+        .middle-img {
+            top: 0px;
+            height: 90%;
+        }
+    }
+    @media (max-width: 375px) {
+        .middle-img {
+            height: 80%;
+        }
+        .middle-content {
+            margin-top: -10%;
+        }
+    }
+    
+}
+
+.middle-slice2-slogan {
+    display: none;
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 60px;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }
 
 .middle-slice2 {
@@ -177,7 +334,8 @@
 
         background-image: url(../images/slogan2.svg);
         background-repeat: no-repeat;
-        width: 90px;
+        width: 20%;
+        margin-left: 10px;
         position: relative;
         top: -5%;      
     }
@@ -185,17 +343,66 @@
     .middle-content {
         writing-mode: vertical-rl;
         height: 280px;
-        width: calc(100% - 11vw);
-        margin: 70px 0;
-        margin-right: 30px;
-        padding: 0 50px;
+        width: calc(80%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
 
-        color: $secondary;
+        color: #8DA291;
         font-size: 16px;
         line-height: 2;
-        
     }
     
+    @media (max-width: 767px) {
+        margin-top: 0px;
+
+        .row{
+            display: flex;
+            flex-direction: column-reverse
+        }
+
+        .middle-title {
+            display: none;
+        }
+        .middle-content {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+        .middle-img {
+            top: 0px;
+            height: 90%;
+        }
+    }
+    @media (max-width: 375px) {
+        .middle-img {
+            height: 80%;
+        }
+        .middle-content {
+            margin-top: -10%;
+        }
+    }
+    
+}
+
+.middle-slice3-slogan {
+    display: none;
+    width: 100%;
+    height: 120px;
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 60px;
+    }
+
+    @media (max-width: 767px) {
+        display: block;
+    }
 }
 
 .middle-slice3{
@@ -206,6 +413,10 @@
     img {
         display: inline-block;
         width: 90px;
+    }
+
+    @media (max-width: 767px) {
+        display: none;
     }
 }
 
@@ -276,13 +487,24 @@
         background: $primary;
         border: 1px $primary solid;
     }
+
+    @media (max-width: 767px) {
+        .row {
+            display: flex;
+            justify-content: center;
+        }
+    }
 }
 
 // email section
 .subscribe {
     background-color: $primary;
 
-    img{
+    .row {
+        padding: 30px 0;
+    }
+    
+    .sub-img{
         width: 40px;
         height: 40px;
         vertical-align: middle;
@@ -316,6 +538,22 @@
         font-size: 16px;
         cursor: pointer;
         padding: 0 20px;
+    }
+
+    @media (max-width:767px) {
+        .row {
+            justify-content: center;
+        }
+        .sub-slogan {
+            display: flex;
+            justify-content: center;
+
+            margin-bottom: 20px;
+        }
+        .sub-slogan {
+            display: flex;
+            justify-content: center;
+        }
     }
 }
 
@@ -359,6 +597,18 @@ footer {
         width: 60px;
         height: 100%;
     }
+    @media (max-width: 767px) {
+        .footer-logo img{
+            width: 60%;
+        }
+        .footer-slogan {
+            display: none;
+        }
 
+        .right-style {
+            align-items: flex-start;
+            margin-top: 10px;
+        }
+    }
 
 }

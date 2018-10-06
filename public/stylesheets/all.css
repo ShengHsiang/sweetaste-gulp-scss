@@ -5303,4 +5303,176 @@ footer {
             -ms-flex-pack: center;
                 justify-content: center; } }
 
+.login-content {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .login-content {
+      margin: 0; } }
+  .login-content .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+
+.login-form {
+  height: 380px;
+  max-width: 390px;
+  background-color: #3F5D45;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 767px) {
+    .login-form {
+      height: 511px; } }
+  .login-form .form-header {
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0; }
+    .login-form .form-header h2 {
+      margin: 0; }
+    @media (max-width: 767px) {
+      .login-form .form-header {
+        margin-top: 30px;
+        margin-bottom: 30px; } }
+  .login-form .mobile-social {
+    display: none; }
+    @media (max-width: 767px) {
+      .login-form .mobile-social {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        background-color: #EAF0ED;
+        height: 116px;
+        width: 100%; }
+        .login-form .mobile-social .social-btn {
+          width: 105px;
+          height: 56px;
+          background-color: #fff;
+          margin-bottom: 0;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .login-form .mobile-social .social-btn img {
+            width: 90%;
+            height: 50%; }
+        .login-form .mobile-social .social-btn:first-child {
+          border-right: 1px solid #EAF0ED; }
+        .login-form .mobile-social .social-btn:last-child {
+          border-left: 1px solid #EAF0ED; } }
+  .login-form .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%; }
+    @media (max-width: 767px) {
+      .login-form .form {
+        margin-top: 20px; } }
+  .login-form .form-input {
+    max-width: 330px;
+    height: 56px;
+    margin-bottom: 16px;
+    font-size: 18px; }
+    .login-form .form-input input {
+      padding-left: 15px; }
+  .login-form .form-check {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 30px;
+    margin-top: -6px;
+    color: #fff; }
+  .login-form .btn {
+    width: 390px;
+    height: 65px;
+    padding: 0;
+    border-radius: 0;
+    background-color: #ffe180;
+    color: #3F5D45;
+    font-size: 24px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .login-form .btn {
+        width: 100%; } }
+
+.login-social {
+  background-color: #EAF0ED;
+  height: 350px;
+  max-width: 390px;
+  position: relative;
+  top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  @media (max-width: 767px) {
+    .login-social {
+      display: none; } }
+  .login-social .social-header {
+    font-size: 24px;
+    color: #8DA291;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 36px;
+    font-weight: normal; }
+  .login-social .social-btn {
+    width: 330px;
+    height: 56px;
+    background-color: #fff;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .login-social .social-btn img {
+      width: 50%;
+      height: 50%; }
+
 /*# sourceMappingURL=all.css.map */

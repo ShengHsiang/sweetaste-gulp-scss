@@ -5861,7 +5861,8 @@ footer {
     color: #fff;
     text-align: center;
     font-size: 24px;
-    margin: 40px 0; }
+    margin-top: 40px;
+    margin-bottom: 10px; }
     .login-form .form-header h2 {
       margin: 0; }
     @media (max-width: 767px) {
@@ -5927,9 +5928,11 @@ footer {
     max-width: 330px;
     height: 56px;
     margin-bottom: 16px;
-    font-size: 18px; }
+    font-size: 18px;
+    background-color: #8DA291; }
     .login-form .form-input input {
-      padding-left: 15px; }
+      padding-left: 15px;
+      height: 56px; }
   .login-form .form-check {
     -ms-flex-item-align: start;
         align-self: flex-start;

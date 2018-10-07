@@ -5614,29 +5614,36 @@ footer {
   margin: 20px 0; }
 
 .cart-items {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
   color: #3F5D45;
   padding-top: 20px;
   padding-bottom: 20px;
   border-bottom: 1px solid #EAF0ED; }
   .cart-items:last-child {
     border: none; }
-  .cart-items .cart-items {
+  @media (max-width: 767px) {
+    .cart-items {
+      border: none; } }
+  .cart-items .row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .cart-items .cart-item-img .item-img {
+    width: 110px;
+    height: 110px;
+    background-position: center center;
+    background-size: cover; }
+  @media (max-width: 767px) {
+    .cart-items .cart-item-img {
+      margin-bottom: 8px; }
+      .cart-items .cart-item-img .item-img {
+        width: 100%;
+        height: 106px; } }
+  @media (max-width: 767px) {
+    .cart-items .cart-item-detial {
+      margin-bottom: 8px; } }
   .cart-items .cart-item-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5645,11 +5652,6 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .cart-items .cart-item-img {
-    width: 110px;
-    height: 110px;
-    background-position: center center;
-    background-size: cover; }
   .cart-items .pic1 {
     background-image: url(../images/item6.jpg); }
   .cart-items .pic2 {
@@ -5670,9 +5672,20 @@ footer {
       transition: all 0.3s; }
   .cart-items .cart-item-price {
     font-weight: bold;
-    font-size: 20px; }
+    font-size: 20px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .cart-items .cart-item-price {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-align: right;
+        border-top: 1px solid #EAF0ED;
+        border-bottom: 1px solid #EAF0ED; } }
   .cart-items .cart-item-del {
     font-size: 24px; }
+    @media (max-width: 767px) {
+      .cart-items .cart-item-del {
+        display: none; } }
 
 .cart-info {
   height: 193px;

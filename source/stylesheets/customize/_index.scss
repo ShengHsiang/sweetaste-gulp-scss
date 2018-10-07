@@ -499,6 +499,9 @@
 // email section
 .subscribe {
     background-color: $primary;
+    .container {
+        max-width: 810px;
+    }
 
     .row {
         padding: 30px 0;
@@ -561,6 +564,9 @@
 footer {
     background-color: #EAF0ED;
     padding: 50px 0;
+    .container {
+        max-width: 810px;
+    }
 
     .left-style{
         display: flex;

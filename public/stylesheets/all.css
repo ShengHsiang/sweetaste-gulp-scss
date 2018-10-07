@@ -6238,6 +6238,8 @@ footer {
   .checkout-form label {
     font-size: 20px;
     font-weight: bold; }
+  .checkout-form .text-size-sm {
+    font-size: 16px; }
   .checkout-form .form-control {
     border-radius: 0px;
     -webkit-appearance: none;
@@ -6354,5 +6356,110 @@ footer {
     .order-list-content .list-content-text span:nth-child(2) {
       font-weight: bold;
       font-size: 20px; }
+
+.checkout-form2 {
+  height: 624px; }
+
+.checkout-form3 {
+  height: 500px; }
+
+.checkout-form4 {
+  height: 565px; }
+
+.checkout-btn {
+  width: 100%;
+  margin-bottom: 30px; }
+  .checkout-btn .btn {
+    width: 50%;
+    line-height: 56px;
+    padding: 0;
+    font-size: 20px;
+    background-color: #3F5D45;
+    border-radius: 0;
+    color: #EAF0ED;
+    font-weight: bold;
+    border: 1px solid #EAF0ED; }
+  .checkout-btn .btn.active {
+    background-color: #EAF0ED;
+    color: #3F5D45; }
+
+.checkout-success-banner {
+  background-image: url(https://bit.ly/2P7GhNd);
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 460px;
+  margin-bottom: 60px; }
+  @media (max-width: 767px) {
+    .checkout-success-banner {
+      margin-bottom: 0; } }
+
+.success-content {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  text-align: center;
+  width: 190px;
+  margin: 0 auto; }
+  .success-content .form-progress {
+    width: 100%;
+    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white; }
+    .success-content .form-progress::before {
+      content: " ";
+      height: 1px;
+      width: 90%;
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 10px;
+      background-color: #3F5D45; }
+    .success-content .form-progress i {
+      z-index: 100;
+      color: #3F5D45; }
+  .success-content .success-img {
+    background-image: url(../images/lg-付款成功.svg);
+    background-position: center center;
+    background-size: cover;
+    width: 190px;
+    height: 46px; }
+  .success-content .success-btn {
+    display: block;
+    width: 300px;
+    line-height: 65px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #FFE180;
+    margin-left: -55px;
+    margin-top: 52px; }
+    @media (max-width: 767px) {
+      .success-content .success-btn {
+        display: none; } }
+  .success-content a {
+    text-decoration: none; }
+
+.success-btn {
+  display: none; }
+  @media (max-width: 767px) {
+    .success-btn {
+      display: block;
+      width: 100%;
+      line-height: 65px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      background-color: #FFE180; } }
 
 /*# sourceMappingURL=all.css.map */

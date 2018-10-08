@@ -5212,6 +5212,8 @@ a.text-dark:hover, a.text-dark:focus {
 .navbar .navbar-cart {
   margin-left: 40px;
   font-size: 24px; }
+  .navbar .navbar-cart a:hover {
+    color: #8DA291; }
 
 @media (max-width: 767px) {
   .navbar button {
@@ -5251,9 +5253,16 @@ a.text-dark:hover, a.text-dark:focus {
     font-weight: 700; }
   .navbar-nav li:hover {
     border-bottom: 2px #3F5D45 solid;
-    cursor: pointer; }
+    color: #8DA291;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
   .navbar-nav a:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    color: #3F5D45; }
   @media (max-width: 767px) {
     .navbar-nav {
       /* 先隱藏menu */
@@ -5297,8 +5306,7 @@ a.text-dark:hover, a.text-dark:focus {
           transform: translateY(-50%); }
   .banner-content .content-box a {
     position: relative;
-    min-height: 180px;
-    height: 20vw;
+    height: 256px;
     width: 101%;
     background-color: rgba(63, 93, 69, 0.8);
     border: 2px solid white;
@@ -5321,7 +5329,12 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 24px;
     color: #ffffff;
     letter-spacing: 6px; }
-  .banner-content .content-box .active {
+    @media (max-width: 767px) {
+      .banner-content .content-box a {
+        font-size: 20px;
+        height: 180px; } }
+  .banner-content .content-box .active,
+  .banner-content .content-box a:hover {
     background-color: rgba(255, 225, 128, 0.8);
     color: #3F5D45;
     font-weight: bold; }
@@ -5667,6 +5680,11 @@ a.text-dark:hover, a.text-dark:focus {
     font-size: 16px;
     cursor: pointer;
     padding: 0 20px; }
+    .subscribe .input-group button:hover {
+      background-color: #ffe89e;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
   @media (max-width: 767px) {
     .subscribe .row {
       -webkit-box-pack: center;
@@ -5952,6 +5970,13 @@ footer {
     color: #3F5D45;
     font-size: 24px;
     font-weight: bold; }
+    .login-form .btn:hover {
+      background-color: #ffe89e;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
     @media (max-width: 767px) {
       .login-form .btn {
         width: 100%; } }
@@ -5996,6 +6021,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+    .login-social .social-btn:hover {
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.212);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.212); }
     .login-social .social-btn img {
       width: 50%;
       height: 50%; }
@@ -6195,10 +6223,12 @@ footer {
   text-align: center; }
   .cart-info-btn:hover {
     background-color: rgba(255, 225, 128, 0.5);
+    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
-    transition: all 0.3s;
-    cursor: pointer; }
+    transition: all 0.3s; }
   @media (max-width: 767px) {
     .cart-info-btn {
       width: auto;
@@ -6272,7 +6302,7 @@ footer {
     color: #8DA291; }
   .checkout-form ::-webkit-input-placeholder {
     color: #8DA291; }
-  .checkout-form .next-step {
+  .checkout-form .next-step-btn {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -6284,6 +6314,14 @@ footer {
     color: #3F5D45;
     font-size: 24px;
     font-weight: bold; }
+    .checkout-form .next-step-btn:hover {
+      background-color: #ffe89e;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
 
 .checkout-info {
   display: -webkit-box;
@@ -6466,6 +6504,14 @@ footer {
     background-color: #FFE180;
     margin-left: -55px;
     margin-top: 52px; }
+    .success-content .success-btn:hover {
+      background-color: #ffe89e;
+      -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
     @media (max-width: 767px) {
       .success-content .success-btn {
         display: none; } }

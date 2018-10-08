@@ -29,7 +29,10 @@
     }
     .navbar-cart {
         margin-left: 40px;
-        font-size: 24px
+        font-size: 24px;
+        a:hover {
+            color: $secondary;
+        }
     }
 
     @media (max-width: 767px) {
@@ -71,11 +74,15 @@
 
     li:hover {
         border-bottom: 2px $primary solid;
+        color: $secondary;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
         cursor: pointer;
+        transition: all 0.3s;
     }
 
     a:hover {
         text-decoration: none;
+        color: $primary;
     }
 
     @media (max-width: 767px) {
@@ -120,12 +127,11 @@
 
 .banner-content {
     transform: translateY(-50%);
-    
+
     .content-box a{
         // box standard props
         position: relative;
-        min-height: 180px;
-        height: 20vw;
+        height: 256px;
         width: 101%;
         background-color: rgba(63, 93, 69, .8);
         border: 2px solid white;
@@ -143,9 +149,15 @@
         font-size: 24px;
         color: #ffffff;
         letter-spacing: 6px;
+
+        @media (max-width:767px) {
+            font-size: 20px;
+            height: 180px;
+        }
     }
 
-    .content-box .active{
+    .content-box .active,
+    .content-box a:hover{
         background-color: rgba(255, 225, 128, .8);
         color: #3F5D45;
         font-weight: bold;
@@ -541,6 +553,11 @@
         font-size: 16px;
         cursor: pointer;
         padding: 0 20px;
+
+        &:hover {
+            background-color: rgb(255, 232, 158);
+            transition: all 0.3s;
+        }
     }
 
     @media (max-width:767px) {

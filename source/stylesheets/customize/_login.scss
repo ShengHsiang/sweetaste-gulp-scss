@@ -123,6 +123,12 @@
         font-size: 24px;
         font-weight: bold;
 
+        &:hover {
+            background-color: rgb(255, 232, 158);
+            box-shadow: 0 5px 10px rgba(0, 0, 0, .3);
+            transition: all 0.3s;
+        }
+
         @media (max-width: 767px) {
             width: 100%;
         }
@@ -160,6 +166,10 @@
         height: 56px;
         background-color: #fff;
         margin-bottom: 16px;
+
+        &:hover {
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.212);
+        }
 
         display: flex;
         justify-content: center;
